@@ -77,6 +77,9 @@
       opacity: 0;
       animation: contentFadeIn 0.8s ease 3s forwards;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     @keyframes contentFadeIn {
@@ -203,13 +206,17 @@
       flex-direction: column;
       align-items: center;
       gap: 22px;
-      margin-top: 20px;
+      margin: 20px auto 0;
+      width: fit-content;
     }
+    
     .links .row {
       display: flex;
       gap: 20px;
       justify-content: center;
+      flex-wrap: nowrap;
     }
+    
     @media (max-width: 520px) {
       .links .row {
         flex-wrap: wrap;
@@ -279,33 +286,33 @@
 
       <p class="lead">Escolha um atalho abaixo:</p>
 
-      <nav class="links organized" aria-label="Atalhos rápidos">
+      <nav class="links" aria-label="Atalhos rápidos">
         <div class="row">
           <a class="card" href="https://www.tiktok.com" target="_blank">
-            <img src="https://www.google.com/s2/favicons?sz=64&domain=tiktok.com">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=tiktok.com" alt="TikTok">
             <span>Tiktok</span>
           </a>
           <a class="card" href="https://mail.google.com" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="Gmail">
             <span>Gmail</span>
           </a>
           <a class="card" href="https://www.instagram.com" target="_blank">
-            <img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=instagram.com" alt="Instagram">
             <span>Instagram</span>
           </a>
         </div>
 
         <div class="row">
           <a class="card" href="https://www.youtube.com" target="_blank">
-            <img src="https://www.google.com/s2/favicons?sz=64&domain=youtube.com">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=youtube.com" alt="YouTube">
             <span>YouTube</span>
           </a>
           <a class="card" href="https://www.twitch.tv" target="_blank">
-            <img src="https://www.google.com/s2/favicons?sz=64&domain=twitch.tv">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=twitch.tv" alt="Twitch">
             <span>Twitch</span>
           </a>
           <a class="card" href="https://chat.openai.com" target="_blank">
-            <img src="https://www.google.com/s2/favicons?sz=64&domain=chat.openai.com">
+            <img src="https://www.google.com/s2/favicons?sz=64&domain=chat.openai.com" alt="ChatGPT">
             <span>ChatGPT</span>
           </a>
         </div>
